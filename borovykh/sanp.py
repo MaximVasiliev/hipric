@@ -9,4 +9,4 @@ for symbol in sp500:
 f.close()
 print time.time() - my_time
 
-os.system('python russell2000.py')
+os.system('python hipric.py -i sp500.txt')

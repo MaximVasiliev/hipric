@@ -107,16 +107,17 @@ def open_me(ticker):
 		data[8]+=float(x[8])
 		data[9]+=float(x[9])
 	outfile.close()
-	data[0]=data[0]/kostyl
-	data[1]=data[1]/kostyl
-	data[2]=data[2]/kostyl
-	data[3]=data[3]/kostyl
-	data[4]=data[4]/kostyl
-	data[5]=data[5]/kostyl
-	data[6]=data[6]/kostyl
-	data[7]=data[7]/kostyl
-	data[8]=data[8]/kostyl
-	data[9]=data[9]/kostyl
+	if kostyl != 0:
+		data[0]=data[0]/kostyl
+		data[1]=data[1]/kostyl
+		data[2]=data[2]/kostyl
+		data[3]=data[3]/kostyl
+		data[4]=data[4]/kostyl
+		data[5]=data[5]/kostyl
+		data[6]=data[6]/kostyl
+		data[7]=data[7]/kostyl
+		data[8]=data[8]/kostyl
+		data[9]=data[9]/kostyl
 	data[10] = ticker
 	data[11] = j
 	with open('olymp.csv','a') as f:

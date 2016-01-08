@@ -6,7 +6,7 @@ from tqdm import tqdm
 base_url = "http://ichart.finance.yahoo.com/table.csv?s="
 app_url = "&a=0&b=1&c=2010&d=0&e=1&f=2017&g=d"
 def make_url(ticker_symbol):
-	return "http://ichart.finance.yahoo.com/table.csv?s=%s&a=0&b=1&c=2010&d=0&e=1&f=2016&g=d" % (ticker_symbol)
+	return "http://ichart.finance.yahoo.com/table.csv?s=%s&a=0&b=1&c=2010&d=0&e=1&f=2017&g=d" % (ticker_symbol)
 
 def pull_historical_data(ticker_symbol):
     try:
