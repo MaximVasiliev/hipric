@@ -19,5 +19,5 @@ for some in tr:
 
 f.close()
 print time.time() - my_time
-os.system('python hipric.py -i sp500.txt')
-os.system('python hipric.py -i russell2000.txt')
+
+
